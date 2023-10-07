@@ -34,21 +34,13 @@ It also imports the following declared resources or data sources:
 1. in your local terminal set these values in your `~/.profile`:
 2. below will be used for secrets and sensitive vars via our declared vars in `variables.tf`:
 ```
-# Env Vars: aws api access example.org
- export AWS_ACCESS_KEY_ID=exampleITfromIT
- export AWS_SECRET_ACCESS_KEY=examplekeyfromIT
- export TF_VAR_docker_username=nhgce
- export TF_VAR_docker_password=examplepassword
- export TF_VAR_db_pw=123example
- export TF_VAR_db_username=exampleuser
- export TF_VAR_auth_key='value'
- export TF_VAR_secure_auth_key='value'
- export TF_VAR_logged_in_key='value'
- export TF_VAR_nonce_key='value'
- export TF_VAR_auth_salt='value'
- export TF_VAR_secure_auth_salt='value'
- export TF_VAR_logged_in_salt='value'
- export TF_VAR_nonce_salt='value'
+# TF local Env Vars: aws api access example.org
+ export AWS_ACCESS_KEY_ID=459384508390kdjfkd
+ export AWS_SECRET_ACCESS_KEY=945889ddkfjdkjf
+ export TF_VAR_docker_username=dockeruser24
+ export TF_VAR_docker_password=example123
+ export TF_VAR_db_pw=dafsdaflkajdf
+ export TF_VAR_db_username=dbuser1
  ```
  3. Source .profile: `source ~/.profile`
  ** *Note:Make sure you have a space before each export line as this hides the values from all logs/text outputs* **
