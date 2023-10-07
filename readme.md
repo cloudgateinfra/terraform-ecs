@@ -43,8 +43,8 @@ It also imports the following declared resources or data sources:
  export TF_VAR_db_username=dbuser1
  ```
  3. Source .profile: `source ~/.profile`
- ** *Note:Make sure you have a space before each export line as this hides the values from all logs/text outputs* **
- ** *Otherwise use ACM or other secrets manager if need to use on cloud with deploy roles* **
+ ** *use a space before each export local tfvar line as this hides the values from all logs/text outputs* **
+ ** *for prod/team use ACM or other secrets manager if need to use on cloud with deploy roles* **
  4. In `terraform.tfvars` make sure to set registered domain name variable to `test.com` or whatever you would like the dns alb cname record to be pointed to.
  5. In `main.tf` for "local vars" section, make sure ACM cert is the correct ARN of the SSL cert you would like to use for the env for `certificate_arn` local variable.
 
